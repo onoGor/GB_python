@@ -20,6 +20,7 @@ def main(argv):
         records[line_edit - 1] = new_record
         with open(file_sale, 'w', encoding='utf-8') as f:
             f.write("\n".join(records))
+            print('Запись успешно отредактирована')
     except Exception as e:
         print(e, '\n')
 
